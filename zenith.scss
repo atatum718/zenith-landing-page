@@ -1,0 +1,129 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+$primarycolor: #ab00ff;
+
+@font-face {
+  src: url(fonts\futura-heavy.ttf);
+  font-family: futura;
+}
+:root {
+  --fontfamily: "futura", sansserif;
+}
+
+body {
+  font-family: var(--fontfamily);
+  img {
+    width: 100%;
+  }
+}
+
+.header-navbar {
+  display: flex;
+  justify-content: space-between;
+  // width: 100%;
+  .header-navbar-logo {
+    width: 160px;
+    height: 45px;
+    margin-top: 45px;
+    margin-left: 15px;
+  }
+  .header-navbar-links {
+    display: flex;
+    a {
+      padding: 0.5em;
+      display: none;
+    }
+  }
+  .bar {
+    // display: inline-block;
+    // margin-top: 61px;
+    background-color: #ab00ff;
+  }
+  .bar1 {
+    width: 36.5px;
+    height: 1px;
+    margin-top: 61px;
+    margin-left: 190px;
+  }
+  .bar2 {
+    width: 28px;
+    height: 1px;
+    margin-top: 15px;
+    margin-left: 200px;
+  }
+}
+
+// hero styles
+
+.hero-section {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-auto-rows: auto;
+  // position: relative;
+
+  .hero-title {
+    grid-column: 1/2;
+    margin-top: 15px;
+    margin-left: 15px;
+  }
+  .hero-texture {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: -1;
+    // grid-column: 1/6;
+    // grid-row: 1/2;
+  }
+  .hero-card {
+    grid-row-start: 2;
+    grid-row-end: -1;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.25);
+    margin-top: 25px;
+    // order: -9999;
+    // grid-column: 1/5;
+  }
+  .hero-card .hero-texture {
+    // grid-row: 1/2;
+  }
+  .hero-section-bg-cards__desktop {
+    display: none;
+  }
+}
+
+// features section --------------->
+.features-title {
+  font-size: 20px;
+  margin: 2em;
+  // margin-top: 3em;
+  // margin-bottom: 3em;
+  // margin-left: 0.5em;
+  // align-self: center;
+  background: linear-gradient(#ab00ff, #007bff);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.features-section__cards {
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 100%;
+  height: 105px;
+  margin: 2em;
+  background: #ffffff;
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 7px;
+}
+
+.features-image {
+  width: 25px;
+}
+
+.features-card__title {
+  align-self: center;
+}
